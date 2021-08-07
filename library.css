@@ -1,0 +1,188 @@
+* {
+    /* box-sizing: border-box; */
+    /* margin: 0;
+    padding: 0; */
+}
+
+body {
+    background-color: #2f5cd6;
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#header {
+    margin: 0;
+    display: block;
+    width: 100%;
+    background-color: #5da9f0;
+    color: #fff;
+    height: 70px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5em;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+#add-book {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: lightgray;
+}
+
+#popup-container {
+     display: none;
+     background:rgba(0, 0, 0, 0.5);
+     width: 100vw;
+     height: 100vh;
+     position: fixed;
+     top: 0;
+     left: 0;
+     justify-content: center;
+     align-items: center;
+     /* opacity: 0; */
+}
+
+/* #popup-container.show {
+    opacity: 1;
+} */
+
+#popup-form {
+    height: 430px;
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.new-book {
+    margin-top: -20px;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+#popup-form p {
+    margin-bottom: 5px;
+}
+
+#popup-form input {
+    width: 170px;
+    height: 27px;
+    border-radius: 2px;
+}
+
+.num-pages {
+    margin-right: 48px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.author {
+    margin-right: 120px;
+}
+.book-title {
+    margin-right: 95px;
+}
+
+#close {
+    position: relative;
+    top: -30px;
+    left: 215px;
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: lightgray;
+}
+
+.lib-card{
+    height: 24em;
+    width: 18em;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.lib-card .book-title {
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+.lib-card p {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.lib-card .read-status {
+    border: 1px solid black;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.green{
+    border: 1px solid black;
+    width: 40px;
+    text-align: center;
+    background-color: #24980f;
+    color: #fff;
+}
+.red{
+    border: 1px solid black;
+    width: 40px;
+    text-align: center;
+    background-color: #e45555;
+    color: #fff;
+}
+
+.lib-card button {
+    /* position: absolute;
+    bottom: 0; */
+    margin-left: 45px;
+    border-radius: 15px;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    border: 0;
+    background-color: lightgray;
+    text-transform: uppercase;
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+}
+
+#add-book {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    font-size: 40px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#add-library{
+    margin-top: 20px;
+    padding: 0.7rem 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 0;
+    border-radius: 30px;
+    background-color: lightgray;
+}
